@@ -1,0 +1,36 @@
+<form id="form-statuses">
+  <fieldset>
+    <div class="row mx-1 my-1">
+      <!-- Encabezado -->
+      <h4>Statuses of shipments</h4>
+      <div class="col-md-4">
+        <label for="current-date" class="form-label">Current date and time</label>
+        <input type="text" id="current-date" class="form-control" disabled />
+      </div>
+      <div class="col-md-4">
+        <label for="shipment-type" class="form-label">Type of shipment</label>
+        <select id="shipment-type" class="form-select" name="shipment-type">
+          <option value="select a shipment">Select a shipment</option>
+          <option value="sack">Sacks</option>
+          <option value="envelope">Envelopes</option>
+          <option value="pack">Packs</option>
+          <option value="box">Boxes</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="numGuide" class="form-label">Number of guide</label>
+        <input type="text" id="numGuide" class="form-control" />
+      </div>
+      <div class="col-2">
+        <div class="form-group mt-4 pt-2"></div>
+        <a id="search-shipment" type="button" class="nav-link btn btn-primary bg-primary text-light py-2">Search shipment</a>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<div class="container bg-body-tertiary mt-3 ms-3 p-2" id="div-info-container">
+  <!-- Se agrega un contenedor para la tabla, en boostrap bg-body-tertiary/..., para el color de fondo, ms margen stark margen izquierdo, mt margin top-->
+  <div id="info"><h5>Select a type of shipment and a guide number, press the search button.</h5></div>
+  <div id="table"></div>
+</div>

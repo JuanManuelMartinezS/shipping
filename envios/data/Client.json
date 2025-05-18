@@ -1,0 +1,30 @@
+[
+  {
+    "address": "Conjunto cerrado Torres de Barcelona",
+    "phoneNumber": "3224567890",
+    "city": "BETANIA ANTIOQUIA",
+    "name": "Carlos Cuesta Londoño",
+    "id": "JI2RA"
+  },
+  {
+    "address": "clle 99c nro 40-09",
+    "phoneNumber": "1223243434343",
+    "city": "BELLO ANTIOQUIA",
+    "name": "Ernesto Arbelaez",
+    "id": "G662D"
+  },
+  {
+    "address": "Barrio la cumbre por la panade",
+    "phoneNumber": "2334343212121",
+    "city": "ARGELIA ANTIOQUIA",
+    "name": "Alejandro Duque Muñoz",
+    "id": "HXDTO"
+  },
+  {
+    "address": "Universidad de caldas",
+    "phoneNumber": "3116734453",
+    "city": "ABEJORRAL ANTIOQUIA",
+    "name": "Juan Manuel Martinez Sanchez",
+    "id": "G5UEA"
+  }
+]

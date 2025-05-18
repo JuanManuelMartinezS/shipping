@@ -1,0 +1,70 @@
+<form id="form-shipments">
+  <!--- <form>: Define un formulario HTML donde el usuario puede ingresar datos. El contenido dentro de <form> se puede enviar a un servidor o procesar localmente.-->
+  <fieldset>
+    <!-- Agrupa visualmente y lógicamente elementos del formulario. Permite organizar mejor los campos.-->
+    <div class="row mb-3">
+      <!-- este <div> lo que hace es crear una fila, como dentro hay otros dos div de clase columna, dentro de ese div se crean dos colunmas, recuerde dentro de esas se pueden almacenar hasta 12 columnas y html maneja el espacio de acuerdo a esas 12 columnas-->
+      <div class="col">
+        <div class="form-group">
+          <label for="disponible" class="form-label my-0">Number of Guide</label>
+          <input type="text" class="form-control" id="numGuide" name="numGuide" placeholder="Automatic assignment" disabled />
+        </div>
+      </div>
+
+      <div class="col-md-2" id="div-certified" style="visibility: hidden">
+        <div class="form-group mt-4 pt-2 float-end">
+          <label for="isCertified" class="form-label me-2">Certified</label>
+          <input type="checkbox" id="isCertified" name="isCertified" class="form-check-input" />
+          <!-- caja para chequear al final centrada -->
+        </div>
+      </div>
+
+      <div class="col-md-2" id="div-fragile">
+        <div class="form-group mt-4 pt-2 float-end">
+          <!-- caja para chequear al final de la fila centrada -->
+          <label for="isFragile" class="form-label me-2">Fragile</label>
+          <input type="checkbox" id="isFragile" name="isFragile" class="form-check-input" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Remitente y destinatario -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="sender" class="form-label">Sender</label>
+          <select class="form-select" id="sender" name="sender" required></select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="addressee" class="form-label">Addressee</label>
+          <select class="form-select" id="addressee" name="addressee" required></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dice contener -->
+    <div class="form-group mb-3">
+      <label for="content" class="form-label">Says to contain</label>
+      <input type="text" class="form-control" id="content" name="content" minlength="4" maxlength="150" required />
+    </div>
+
+    <!-- Dimensiones y peso -->
+    <div class="row mb-3" id="div-weight-value">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="weight" class="form-label">Weight</label>
+          <input type="number" class="form-control" id="weight" name="weight" value="0.0" min="0.0" step="0.01" required />
+        </div>
+      </div>
+      <!-- Valor declarado -->
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="value" class="form-label">Value</label>
+          <input type="number" class="form-control" id="value" name="value" value="0.0" min="0.0" step="0.01" required />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</form>

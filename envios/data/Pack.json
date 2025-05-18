@@ -1,0 +1,116 @@
+[
+  {
+    "addressee": {
+      "address": "Av. Paralela edificio Verdum",
+      "phoneNumber": "8789876976",
+      "city": "BETANIA ANTIOQUIA",
+      "name": "Juliana Perez",
+      "id": "W3D1B"
+    },
+    "sender": {
+      "address": "Conjunto cerrado Torres de Barcelona",
+      "phoneNumber": "3224567890",
+      "city": "BETANIA ANTIOQUIA",
+      "name": "Carlos Cuesta Londoño",
+      "id": "JI2RA"
+    },
+    "statuses": [
+      {
+        "dateTime": "2024-11-23T11:39:49",
+        "id": "118400676",
+        "deliveryStatus": "RECEIVED"
+      },
+      {
+        "dateTime": "2024-12-04T15:05",
+        "id": "87956874",
+        "deliveryStatus": "IN_PREPARATION"
+      },
+      {
+        "dateTime": "2024-12-04T15:54",
+        "id": "1048076721",
+        "deliveryStatus": "SENT"
+      },
+      {
+        "dateTime": "2024-12-04T15:57",
+        "id": "1057587822",
+        "deliveryStatus": "ON_THE_WAY"
+      },
+      {
+        "dateTime": "2024-12-04T23:17",
+        "id": "972563121",
+        "deliveryStatus": "RESHIPPED"
+      },
+      {
+        "dateTime": "2024-12-05T13:54",
+        "id": "1377748533",
+        "deliveryStatus": "DELIVERED"
+      }
+    ],
+    "weight": 12,
+    "payment": 1200,
+    "isFragile": true,
+    "id": "JCVJXE7Y",
+    "type": "Pack",
+    "value": 2,
+    "content": "Un Libro de Ingenieria",
+    "numGuide": "JCVJXE7Y"
+  },
+  {
+    "addressee": {
+      "address": "Av. Paralela edificio Verdum",
+      "phoneNumber": "8789876976",
+      "city": "BETANIA ANTIOQUIA",
+      "name": "Juliana Perez",
+      "id": "W3D1B"
+    },
+    "sender": {
+      "address": "Conjunto cerrado Torres de Barcelona",
+      "phoneNumber": "3224567890",
+      "city": "BETANIA ANTIOQUIA",
+      "name": "Carlos Cuesta Londoño",
+      "id": "JI2RA"
+    },
+    "statuses": [{
+      "dateTime": "2024-12-03T21:16:11",
+      "id": "1219065932",
+      "deliveryStatus": "RECEIVED"
+    }],
+    "weight": 1,
+    "payment": 100,
+    "isFragile": false,
+    "id": "76QEG03X",
+    "type": "Pack",
+    "value": 2,
+    "content": "Computador gaming, teclado gaming, mouse gaming",
+    "numGuide": "76QEG03X"
+  },
+  {
+    "addressee": {
+      "address": "Universidad de caldas",
+      "phoneNumber": "3116734453",
+      "city": "ABEJORRAL ANTIOQUIA",
+      "name": "Juan Manuel Martinez Sanchez",
+      "id": "G5UEA"
+    },
+    "sender": {
+      "address": "Barrio la cumbre por la panade",
+      "phoneNumber": "2334343212121",
+      "city": "ARGELIA ANTIOQUIA",
+      "name": "Alejandro Duque Muñoz",
+      "id": "HXDTO"
+    },
+    "statuses": [{
+      "dateTime": "2024-12-06T10:22:39",
+      "id": "1718061424",
+      "deliveryStatus": "RECEIVED"
+    }],
+    "weight": 0.02,
+    "payment": 2,
+    "isFragile": false,
+    "id": "MSVA9DYT",
+    "type": "Pack",
+    "value": 0.03,
+    "content": "Computador gaming, teclado gaming, mouse gaming",
+    "numGuide": "MSVA9DYT"
+  }
+]

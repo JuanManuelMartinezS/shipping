@@ -1,0 +1,94 @@
+[
+  {
+    "addressee": {
+      "phoneNumber": "1223243434343",
+      "address": "clle 99c nro 40-09",
+      "city": "BELLO ANTIOQUIA",
+      "name": "Ernesto Arbelaez",
+      "id": "G662D"
+    },
+    "sender": {
+      "phoneNumber": "8789876322",
+      "address": "Av. Paralela Edificio Verdum",
+      "city": "ABEJORRAL ANTIOQUIA",
+      "name": "Juliana Perez",
+      "id": "0MTPI"
+    },
+    "isCertified": true,
+    "statuses": [{
+      "dateTime": "2024-12-05T16:24:53",
+      "id": "1895128588",
+      "deliveryStatus": "RECEIVED"
+    }],
+    "weight": 0,
+    "payment": 2860,
+    "isFragile": false,
+    "id": "LQ70SS43",
+    "type": "Envelope",
+    "value": 0,
+    "content": "Documentos",
+    "numGuide": "LQ70SS43"
+  },
+  {
+    "addressee": {
+      "phoneNumber": "3116734453",
+      "address": "Universidad de caldas",
+      "city": "ABEJORRAL ANTIOQUIA",
+      "name": "Juan Manuel Martinez Sanchez",
+      "id": "7A94J"
+    },
+    "sender": {
+      "phoneNumber": "8789876322",
+      "address": "Av. Paralela Edificio Verdum",
+      "city": "ABEJORRAL ANTIOQUIA",
+      "name": "Juliana Perez",
+      "id": "0MTPI"
+    },
+    "isCertified": false,
+    "statuses": [
+      {
+        "dateTime": "2024-12-05T21:59:36",
+        "id": "352833305",
+        "deliveryStatus": "RECEIVED"
+      },
+      {
+        "dateTime": "2024-12-05T21:59",
+        "id": "699598491",
+        "deliveryStatus": "IN_PREPARATION"
+      },
+      {
+        "dateTime": "2024-12-05T21:59",
+        "id": "1051484127",
+        "deliveryStatus": "SENT"
+      },
+      {
+        "dateTime": "2024-12-05T22:00",
+        "id": "1647206280",
+        "deliveryStatus": "ON_THE_WAY"
+      },
+      {
+        "dateTime": "2024-12-05T22:00",
+        "id": "423701311",
+        "deliveryStatus": "RESHIPPED"
+      },
+      {
+        "dateTime": "2024-12-05T22:00",
+        "id": "1033337526",
+        "deliveryStatus": "AVAILABLE_IN_OFFICE"
+      },
+      {
+        "dateTime": "2024-12-05T22:00",
+        "id": "651070057",
+        "deliveryStatus": "DELIVERED"
+      }
+    ],
+    "weight": 0,
+    "payment": 2600,
+    "isFragile": false,
+    "id": "F7RH0SST",
+    "type": "Envelope",
+    "value": 0,
+    "content": "Papeles de moto",
+    "numGuide": "F7RH0SST"
+  }
+]

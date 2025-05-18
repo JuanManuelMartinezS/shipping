@@ -1,0 +1,107 @@
+[
+  {
+    "length": 1,
+    "weight": 4,
+    "type": "Box",
+    "content": "Computador gaming, teclado gaming, mouse gaming",
+    "numGuide": "JDOI45AI",
+    "volume": 1,
+    "addressee": {
+      "address": "clle 99c nro 40-09",
+      "phoneNumber": "1223243434343",
+      "city": "BELLO ANTIOQUIA",
+      "name": "Ernesto Arbelaez",
+      "id": "G662D"
+    },
+    "sender": {
+      "address": "Barrio la cumbre por la panade",
+      "phoneNumber": "2334343212121",
+      "city": "ARGELIA ANTIOQUIA",
+      "name": "Alejandro Duque Muñoz",
+      "id": "HXDTO"
+    },
+    "width": 1,
+    "statuses": [
+      {
+        "dateTime": "2024-12-05T16:23:41",
+        "id": "1820918448",
+        "deliveryStatus": "RECEIVED"
+      },
+      {
+        "dateTime": "2024-12-05T21:56",
+        "id": "347377610",
+        "deliveryStatus": "IN_PREPARATION"
+      },
+      {
+        "dateTime": "2024-12-05T21:56",
+        "id": "1579239001",
+        "deliveryStatus": "SENT"
+      },
+      {
+        "dateTime": "2024-12-05T21:56",
+        "id": "382544065",
+        "deliveryStatus": "ON_THE_WAY"
+      },
+      {
+        "dateTime": "2024-12-05T21:56",
+        "id": "164159941",
+        "deliveryStatus": "RESHIPPED"
+      },
+      {
+        "dateTime": "2024-12-05T21:56",
+        "id": "511773631",
+        "deliveryStatus": "DELIVERED"
+      },
+      {
+        "dateTime": "2024-12-05T21:56",
+        "id": "1485620711",
+        "deliveryStatus": "RETURNED"
+      }
+    ],
+    "payment": 14000,
+    "isFragile": true,
+    "id": "JDOI45AI",
+    "value": 10,
+    "height": 1
+  },
+  {
+    "length": 1,
+    "weight": 0.03,
+    "type": "Box",
+    "content": "Computadores Gaming",
+    "numGuide": "A9R1OL6Q",
+    "volume": 1,
+    "addressee": {
+      "address": "Conjunto cerrado Torres de Barcelona",
+      "phoneNumber": "3224567890",
+      "city": "BETANIA ANTIOQUIA",
+      "name": "Carlos Cuesta Londoño",
+      "id": "JI2RA"
+    },
+    "sender": {
+      "address": "clle 99c nro 40-09",
+      "phoneNumber": "1223243434343",
+      "city": "BELLO ANTIOQUIA",
+      "name": "Ernesto Arbelaez",
+      "id": "G662D"
+    },
+    "width": 1,
+    "statuses": [
+      {
+        "dateTime": "2024-12-06T10:23:55",
+        "id": "1867179559",
+        "deliveryStatus": "RECEIVED"
+      },
+      {
+        "dateTime": "2024-12-06T10:26",
+        "id": "2071493644",
+        "deliveryStatus": "IN_PREPARATION"
+      }
+    ],
+    "payment": 12015,
+    "isFragile": true,
+    "id": "A9R1OL6Q",
+    "value": 0.05,
+    "height": 1
+  }
+]

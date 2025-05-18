@@ -1,0 +1,37 @@
+<!-- 
+    Formulario para la adición y edición de clientes
+    Note que cada <input> tiene un ID que lo identifica de manera única.
+    Consulte en https://www.w3schools.com/html/html_form_input_types.asp los tipos de cada <input>
+    Consulte también en https://www.w3schools.com/html/html_form_attributes.asp los atributos utlizados aquí
+    Con base en este formulario puede implementar los demás que se requieren
+ -->
+<form id="form-clientes">
+  <fieldset>
+    <!-- IMPORTANTE: no es necesario mostrar el ID de los clientes, por eso type="hidden"  -->
+    <div class="form-group mx-2">
+      <label for="id" class="form-label mt-0 mb-0">Identification</label>
+      <input type="text" class="form-control" id="id" name="id" placeholder="Optional" minlength="5" maxlength="15" />
+      <!-- No es requerido, se puede ingresar, de igual forma si no se crea automaticamente-->
+    </div>
+
+    <div class="form-group mx-2">
+      <label for="name" class="form-label mt-0 mb-0">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required placeholder="Name" minlength="5" maxlength="40" />
+    </div>
+
+    <div class="form-group mx-2">
+      <label for="address" class="form-label mt-0 mb-0">Address</label>
+      <input type="text" class="form-control" id="address" name="address" required placeholder="Address" minlength="5" maxlength="60" />
+    </div>
+
+    <div class="form-group mx-2">
+      <label for="phoneNumber" class="form-label mt-2 mb-0">Phone</label>
+      <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required placeholder="Phone number" minlength="7" maxlength="16" pattern="[0-9+\-]*" />
+    </div>
+
+    <div class="form-group mx-2">
+      <label for="city" class="form-label mt-2 mb-0">City</label>
+      <select class="form-select" id="city" name="city" required placeholder="Select a city"></select>
+    </div>
+  </fieldset>
+</form>

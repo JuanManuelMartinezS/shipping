@@ -1,0 +1,72 @@
+[
+  {
+    "addressee": {
+      "address": "Av. Paralela Edificio Verdum",
+      "phoneNumber": "8789876322",
+      "city": "ABEJORRAL ANTIOQUIA",
+      "name": "Juliana Perez",
+      "id": "0MTPI"
+    },
+    "sender": {
+      "address": "Conjunto cerrado Torres de Barcelona",
+      "phoneNumber": "3224567890",
+      "city": "BETANIA ANTIOQUIA",
+      "name": "Carlos Cuesta Londoño",
+      "id": "JI2RA"
+    },
+    "statuses": [{
+      "dateTime": "2024-12-05T16:24:20",
+      "id": "1910787446",
+      "deliveryStatus": "RECEIVED"
+    }],
+    "weight": 8,
+    "payment": 8000,
+    "isFragile": true,
+    "id": "5PA0IV79",
+    "type": "Sack",
+    "value": 8,
+    "content": "Computadores Gaming",
+    "numGuide": "5PA0IV79"
+  },
+  {
+    "addressee": {
+      "address": "Conjunto cerrado Torres de Barcelona",
+      "phoneNumber": "3224567890",
+      "city": "BETANIA ANTIOQUIA",
+      "name": "Carlos Cuesta Londoño",
+      "id": "JI2RA"
+    },
+    "sender": {
+      "address": "clle 99c nro 40-09",
+      "phoneNumber": "1223243434343",
+      "city": "BELLO ANTIOQUIA",
+      "name": "Ernesto Arbelaez",
+      "id": "G662D"
+    },
+    "statuses": [
+      {
+        "dateTime": "2024-12-05T22:04:17",
+        "id": "97361318",
+        "deliveryStatus": "RECEIVED"
+      },
+      {
+        "dateTime": "2024-12-05T22:09",
+        "id": "55479816",
+        "deliveryStatus": "IN_PREPARATION"
+      },
+      {
+        "dateTime": "2024-12-05T22:14",
+        "id": "1364665324",
+        "deliveryStatus": "SENT"
+      }
+    ],
+    "weight": 0.04,
+    "payment": 40,
+    "isFragile": true,
+    "id": "43TG5QTK",
+    "type": "Sack",
+    "value": 0.03,
+    "content": "Computador gaming, teclado gaming, mouse gaming",
+    "numGuide": "43TG5QTK"
+  }
+]

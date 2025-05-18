@@ -1,0 +1,40 @@
+[
+  {
+    "volume": 1,
+    "storer": {
+      "phoneNumber": "3224567890",
+      "address": "Conjunto cerrado Torres de Barcelona",
+      "city": "BETANIA ANTIOQUIA",
+      "name": "Carlos Cuesta Iglesias",
+      "id": "JI2RA"
+    },
+    "dayOfDeparture": "2024-12-05T16:56",
+    "dayOfArrival": "2024-12-05T15:56",
+    "length": 1,
+    "width": 1,
+    "payment": 208.3,
+    "id": "81P4W9L4",
+    "warehouse": "Zona industrial, Bogota",
+    "content": "Computadores Gaming",
+    "height": 1
+  },
+  {
+    "volume": 1,
+    "storer": {
+      "phoneNumber": "2334343212121",
+      "address": "Barrio la cumbre por la panade",
+      "city": "ARGELIA ANTIOQUIA",
+      "name": "Alejandro Duque Muñoz",
+      "id": "HXDTO"
+    },
+    "dayOfDeparture": "2024-12-05T17:21",
+    "dayOfArrival": "2024-12-05T16:21",
+    "length": 1,
+    "width": 1,
+    "payment": 208.3,
+    "id": "FSREVY50",
+    "warehouse": "warehouse de Alejandro",
+    "content": "arroz diana ",
+    "height": 1
+  }
+]

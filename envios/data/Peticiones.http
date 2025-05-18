@@ -1,0 +1,282 @@
+// Agregue a este archivo todas y cada una de las peticiones HTTP que se requieren para pruebas
+// de lo contrario se utilizará uno por defecto con todas las peticiones de pruebas necesarias.
+// Si su archivo de pruebas no está completo, también se utilizará  el archivo por defecto.
+
+
+### Tenga en cuenta que debe asignar el puerto correcto de salida
+
+@url = http://localhost:7070
+
+### listar los estados de los envíos
+GET {{url}}/delivery/statuses
+
+// ---------------------- CRUd dE CLIENTES ----------------------
+
+### agregar un client con Id conocido
+POST {{url}}/client
+Content-Type: application/json; charset=utf-8
+
+{
+    "id": "0F7Sd",
+    "name": "Juan Manuel Martinez",
+    "address": "Clle 88b, #71-100 Palermo",
+    "phoneNumber": "3116734987",
+    "city": "Manizales"
+}
+
+### agregar un client con Id desconocido
+POST {{url}}/client
+Content-Type: application/json; charset=utf-8
+
+{
+    "name": "Carlos Cuesta Iglesias",
+    "address": "Conjunto cerrado Torres de Barcelona",
+    "phoneNumber": "3224567890",
+    "city": "Bogotá"
+}
+
+### listar todos los client registrados
+GET {{url}}/client
+
+### Buscar un client dado su índice
+GET {{url}}/client/index/3
+
+### Buscar un client dado su Id
+GET {{url}}/client/id/C0001
+
+### Buscar por Id y actualizar algunos o todos los datos de un client
+PATCH {{url}}/client/7JQ6R
+Content-Type: application/json; charset=utf-8
+
+{
+  "name": "Carlos Cuesta Iglesias",
+  "address": "Finca vista hermosa",
+  "phoneNumber": "3124567664",
+  "city": "Manizales"
+}
+
+### Eliminar un client dado su Id
+dELETE {{url}}/client/7JQ6R
+// ---------------------- CRUd dE MERCANCÍAS ----------------------
+
+### agregar mercancía (para mercancía, el Id se autogenera siempre)
+POST {{url}}/merchandise
+Content-Type: application/json; charset=utf-8
+
+{
+    "content": "Huesos para perro con sabor a pollo x 100 unidades",
+    "width": 1.8,
+    "height": 2.4,
+    "length": 3,
+    "dayOfArrival": "2024-10-04T14:35",
+    "dayOfDeparture": "2024-10-12T16:00",
+    "warehouse": "Barrio la Francia, Bogotá",
+    "storer": "JI2RA"
+}
+
+### listar todas las mercancías registradas en depósito
+GET {{url}}/merchandise
+
+### Buscar una mercancía dado su índice
+GET {{url}}/merchandise/index/0
+
+### Buscar una mercancía dado su Id
+GET {{url}}/merchandise/id/IYFKCDU5
+
+### Buscar por Id y actualizar (update de ClientService) algunos o todos los datos de una mercancía en depósito
+PATCH {{url}}/merchandise/4DQMEFHB
+Content-Type: application/json; charset=utf-8
+
+{
+    "content": "500 unidades de Gaseosas Postobon x 2.5 litros",
+    "width": 2.1,
+    "height": 2.5,
+    "length": 2.5,
+    "dayOfArrival": "2024-11-07T12:00",
+    "dayOfDeparture": "2024-12-20T12:00",
+    "warehouse": "Zona industrial de Malteria, Medellin",
+    "storer": "C8NKC"
+}
+
+### Eliminar una mercancía dado su Id
+DELETE {{url}}/merchandise/93S5J99G
+
+// ---------------------- CRUd dE PAQUETES ----------------------
+
+### agregar paquete (para envíos, el nroGuia y el 1er estado se generan automáticamente)
+POST {{url}}/pack
+Content-Type: application/json; charset=utf-8
+
+{
+    "weight": 12,
+    "isFragile": false,
+    "content": "Tallercitos para el fin de semana",
+    "value": 25600,
+    "sender": "7JQ6R",
+    "addressee": "JI2RA",
+}
+
+### listar todos los paquetes
+GET {{url}}/pack
+
+### Buscar un paquete dado su índice
+GET {{url}}/pack/index/0
+
+### Buscar un paquete dado su número de guía
+GET {{url}}/pack/id/L0L9FZ87
+
+### Buscar por nroGuia y actualizar algunos o todos los datos del paquete
+PATCH {{url}}/pack/1KBZUKBQ
+Content-Type: application/json; charset=utf-8
+
+{
+  "isFragile": true,
+  
+}
+
+### Eliminar un paquete dado su número de guía
+dELETE {{url}}/merchandise/AFOQJW4R
+
+// ---------------------- CRUd dE BULTOS ----------------------
+
+### agregar un bulto (para envíos, el nroGuia y el 1er estado se generan automáticamente)
+POST {{url}}/sack
+Content-Type: application/json; charset=utf-8
+
+{
+    "weight": 1200,
+    "isFragile": false,
+    "content": "Panela en atados",
+    "value": 100000,
+    "sender": "C0001",
+    "addressee": "0F7Sd",
+}
+
+### listar todos los bultos
+GET {{url}}/sack
+
+### Buscar un bulto dado su índice
+GET {{url}}/sack/index/0
+
+### Buscar un bulto dado su número de guía
+GET {{url}}/sack/id/1VCU4KED
+
+### Buscar por nroGuia y actualizar algunos o todos los datos del bulto
+PATCH {{url}}/sack/6MIXNTTT
+Content-Type: application/json; charset=utf-8
+
+{
+  "statuses": [
+    {
+      "deliveryStatus": "RESHIPPED",
+      "dateTime": "2024-10-12T11:29:33"
+    }
+  ]
+}
+
+### Eliminar un bulto dado su número de guía
+dELETE {{url}}/sack/1VCU4KED
+
+// ---------------------- CRUd dE SOBRES ----------------------
+
+// se omite: weight, isFragile, content, valor declarado ?????????????????????????
+
+### agregar un sobre (para envíos, el nroGuia y el 1er estado se generan automáticamente)
+POST {{url}}/envelope
+Content-Type: application/json; charset=utf-8
+
+{
+    "weight": 0,
+    "isFragile": false,
+    "content": "Contratos de Alcaldia",
+    "value": 1098777,
+    "sender": "7JQ6R",
+    "addressee": "JI2RA",
+}
+
+### listar todos los sobres
+GET {{url}}/envelope
+
+### Buscar un sobredado su índice
+GET {{url}}/envelope/index/0
+
+### Buscar un sobre dado su número de guía
+GET {{url}}/envelope/id/MGYSMQJS
+
+
+### Buscar por nroGuia y actualizar algunos o todos los datos del sobre
+PATCH {{url}}/envelope/3XHSFHEG
+Content-Type: application/json; charset=utf-8
+
+{
+
+"statuses": [
+    {
+      "deliveryStatus": "IN_PREPARATION",
+      "dateTime": "2024-10-12T11:29:33"
+    }]
+}
+### Buscar por nroGuia eliminar el ultimo estado y actualizar los datos del sobre
+PATCH {{url}}/envelope/3XHSFHEG/delete
+Content-Type: application/json; charset=utf-8
+
+{
+
+
+}
+
+### Eliminar un paquete dado su número de guía
+dELETE {{url}}/envelope/ILOIUBRS
+
+
+
+### agregar una caja 
+POST {{url}}/box
+Content-Type: application/json; charset=utf-8
+
+{
+    "weight": 887,
+    "content": "Energizantes Speed Max x 24 unidades",
+    "value": 76555,
+    "sender": "C8NKC",
+    "addressee": "EFPZ0",
+    "width": 0.3,
+    "height": 0.2,
+    "length": 0.1,
+}
+
+### listar todos las cajas
+GET {{url}}/box
+
+### Buscar una caja dado su índice
+GET {{url}}/box/index/0
+
+### Buscar un sobre dado su número de guía
+GET {{url}}/box/id/FDKCA9I5
+
+### Buscar por nroGuia y actualizar algunos o todos los datos de la caja
+PATCH {{url}}/box/FDKCA9I5
+Content-Type: application/json; charset=utf-8
+
+{
+  "content": "desconocido",
+
+}
+
+### Eliminar un paquete dado su número de guía
+dELETE {{url}}/box/EOHP8N9H
+
+
+### Obtener conteo de registro de clientes
+GET {{url}}/client/conteo
+### Obtener conteo de registro de mercancías
+GET {{url}}/merchandise/conteo
+### Obtener conteo de registro de paquetes
+GET {{url}}/pack/conteo
+### Obtener conteo de registro de bultos
+GET {{url}}/sack/conteo
+### Obtener conteo de registro de sobres
+GET {{url}}/envelope/conteo
+### Obtener conteo de registro de estados de envíos
+GET {{url}}/box/conteo
+
