@@ -18,22 +18,22 @@ A full-stack shipping management system with a **Java backend (REST API with Mav
 
 ## 📁 Project Structure
 
+```text
 .
-├── enviamos/ # Frontend (HTML, CSS, JS, assets)
+├── enviamos/              # Frontend (HTML, CSS, JS, assets)
 │   ├── index.html
 │   ├── resources/
 │   │   ├── css/
 │   │   ├── js/
 │   │   └── assets/
 │   └── utils/
-├── envios/ # Backend (Java, Maven, REST API)
+├── envios/                # Backend (Java, Maven, REST API)
 │   ├── src/
 │   ├── data/
 │   └── pom.xml
-├── data/ # Shared JSON data
-└── README.md
-
-
+├── data/                  # Shared JSON data
+└── README.md 
+```
 ---
 
 ## ⚙️ Backend (Java, Maven)
