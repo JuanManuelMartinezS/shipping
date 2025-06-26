@@ -1,0 +1,65 @@
+[{
+  "length": 1,
+  "weight": 0.03,
+  "type": "Box",
+  "content": "Pesas 22",
+  "numGuide": "H3B8K12Q",
+  "volume": 1,
+  "addressee": {
+    "address": "Calle 65c #40-09",
+    "phoneNumber": "3112433458",
+    "city": "TURBO ANTIOQUIA",
+    "name": "Sandra Milena",
+    "id": "FE4LC"
+  },
+  "sender": {
+    "address": "Calle 65c #40-07",
+    "phoneNumber": "3112433455",
+    "city": "MEDELLÍN ANTIOQUIA",
+    "name": "juan manuel martinez 22",
+    "id": "12234"
+  },
+  "width": 1,
+  "statuses": [
+    {
+      "dateTime": "2025-06-26T11:09:53",
+      "id": "1469300466",
+      "deliveryStatus": "RECEIVED"
+    },
+    {
+      "dateTime": "2025-06-26T11:11",
+      "id": "10400616",
+      "deliveryStatus": "IN_PREPARATION"
+    },
+    {
+      "dateTime": "2025-06-26T11:11",
+      "id": "632435629",
+      "deliveryStatus": "SENT"
+    },
+    {
+      "dateTime": "2025-06-26T11:11",
+      "id": "592483805",
+      "deliveryStatus": "LOST"
+    },
+    {
+      "dateTime": "2025-06-26T11:11",
+      "id": "2027495528",
+      "deliveryStatus": "ON_THE_WAY"
+    },
+    {
+      "dateTime": "2025-06-26T11:11",
+      "id": "546418238",
+      "deliveryStatus": "DELIVERED"
+    },
+    {
+      "dateTime": "2025-06-26T11:11",
+      "id": "1652432257",
+      "deliveryStatus": "RETURNED"
+    }
+  ],
+  "payment": 12015,
+  "isFragile": false,
+  "id": "H3B8K12Q",
+  "value": 0.06,
+  "height": 1
+}]

@@ -1,0 +1,57 @@
+[{
+  "addressee": {
+    "address": "Calle 65c #40-09",
+    "phoneNumber": "3112433458",
+    "city": "TURBO ANTIOQUIA",
+    "name": "Sandra Milena",
+    "id": "FE4LC"
+  },
+  "sender": {
+    "address": "Calle 65c #40-07",
+    "phoneNumber": "3112433455",
+    "city": "MEDELLÍN ANTIOQUIA",
+    "name": "juan manuel martinez 22",
+    "id": "12234"
+  },
+  "isCertified": true,
+  "statuses": [
+    {
+      "dateTime": "2025-06-26T11:09:33",
+      "id": "147603223",
+      "deliveryStatus": "RECEIVED"
+    },
+    {
+      "dateTime": "2025-06-26T11:13",
+      "id": "1441918914",
+      "deliveryStatus": "IN_PREPARATION"
+    },
+    {
+      "dateTime": "2025-06-26T11:13",
+      "id": "1810015331",
+      "deliveryStatus": "SENT"
+    },
+    {
+      "dateTime": "2025-06-26T11:14",
+      "id": "915133010",
+      "deliveryStatus": "ON_THE_WAY"
+    },
+    {
+      "dateTime": "2025-06-26T11:14",
+      "id": "1071249685",
+      "deliveryStatus": "DELIVERED"
+    },
+    {
+      "dateTime": "2025-06-26T11:14",
+      "id": "1437395063",
+      "deliveryStatus": "RETURNED"
+    }
+  ],
+  "weight": 0,
+  "payment": 2860,
+  "isFragile": false,
+  "id": "9ARLGJG6",
+  "type": "Envelope",
+  "value": 0,
+  "content": "Documentos",
+  "numGuide": "9ARLGJG6"
+}]

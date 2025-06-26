@@ -1,0 +1,19 @@
+[{
+  "volume": 1.1,
+  "storer": {
+    "address": "Calle 65c #40-07",
+    "phoneNumber": "3112433455",
+    "city": "MEDELLÍN ANTIOQUIA",
+    "name": "juan manuel martinez 22",
+    "id": "12234"
+  },
+  "dayOfDeparture": "2025-06-26T12:06",
+  "length": 1.04,
+  "width": 1,
+  "dayOfArrival": "2025-06-26T11:06",
+  "payment": 229.2,
+  "id": "03JVAVJP",
+  "warehouse": "Warehouse's Juan",
+  "content": "Pesas",
+  "height": 1.04
+}]
